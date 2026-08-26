@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "author": "Projeto Kpanga",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-pi-pico", "id": "pico", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-led", "id": "led_verde", "top": -80, "left": 180, "attrs": { "color": "green" } },
+    { "type": "wokwi-led", "id": "led_amarelo", "top": -20, "left": 180, "attrs": { "color": "yellow" } },
+    { "type": "wokwi-led", "id": "led_vermelho", "top": 40, "left": 180, "attrs": { "color": "red" } },
+    { "type": "wokwi-resistor", "id": "r1", "top": -40, "left": 100, "attrs": { "value": "220" } },
+    { "type": "wokwi-resistor", "id": "r2", "top": 20, "left": 100, "attrs": { "value": "220" } },
+    { "type": "wokwi-resistor", "id": "r3", "top": 80, "left": 100, "attrs": { "value": "220" } }
+  ],
+  "connections": [
+    [ "pico:GP15", "r1:1", "green", [ "h0" ] ],
+    [ "r1:2", "led_verde:A", "green", [ "h0" ] ],
+    [ "pico:GP14", "r2:1", "yellow", [ "h0" ] ],
+    [ "r2:2", "led_amarelo:A", "yellow", [ "h0" ] ],
+    [ "pico:GP13", "r3:1", "red", [ "h0" ] ],
+    [ "r3:2", "led_vermelho:A", "red", [ "h0" ] ],
+    [ "pico:GND.8", "led_verde:C", "black", [ "v0" ] ],
+    [ "pico:GND.8", "led_amarelo:C", "black", [ "v0" ] ],
+    [ "pico:GND.8", "led_vermelho:C", "black", [ "v0" ] ]
+  ],
+  "surroundings": {}
+}
