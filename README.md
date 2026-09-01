@@ -48,4 +48,4 @@ Relação com Conceitos de Arquitetura de Computadores
 
 Links Uteis
 - Link da Simulacao no Wokwi: https://wokwi.com/projects/473460269509542913
-- Link do Video no YouTube: 
+- Link do Video no YouTube: https://youtu.be/7L5jvjhxZ-I
